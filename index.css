@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#container{
+
+    display: grid;
+    grid-template-columns: repeat(16, 6rem);
+grid-template-rows: repeat(16, 6rem);
+/* text-align: center; */
+justify-items: center;
+justify-content: center;
+align-items: center;
+}
+
+header{
+
+    height: 10vh;
+}
+
+main{
+    min-height: 100vh;
+    padding: 3rem;
+    text-align: center;
+}

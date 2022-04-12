@@ -21,11 +21,11 @@
     text-align: center;
 }
 
-#container>div:hover {
+/* #container>div:hover {
 
     background-color: aqua;
 
-}
+} */
 
 header {
 
@@ -36,4 +36,10 @@ main {
     min-height: 100vh;
     padding: 3rem;
     text-align: center;
+}
+
+.paint{
+
+    background-color: black;
+
 }

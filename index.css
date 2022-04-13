@@ -7,14 +7,38 @@
 
     display: grid;
     max-width: calc(16*6rem);
-    grid-template-columns: repeat(16, 6rem);
-    grid-template-rows: repeat(16, 6rem);
+    /* grid-template-columns: repeat(16, 6rem);
+    grid-template-rows: repeat(16, 6rem); */
     /* justify-items: stretch; */
     justify-content: center;
     margin: auto;
     /* justify-self: center; */
     /* align-items: stretch; */
     border: 1px solid black;
+}
+
+menu {
+
+    text-align: end;
+
+}
+
+menu ul button {
+    font-size: 1.2rem;
+}
+
+menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+
+}
+
+#new-grid {
+
+    margin-right: 8rem;
+    font-size: 1.5rem;
 }
 
 #container>div {
@@ -38,7 +62,7 @@ main {
     text-align: center;
 }
 
-.paint{
+.paint {
 
     background-color: black;
 

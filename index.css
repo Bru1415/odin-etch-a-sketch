@@ -7,13 +7,10 @@
 
     display: grid;
     max-width: calc(16*6rem);
-    /* grid-template-columns: repeat(16, 6rem);
-    grid-template-rows: repeat(16, 6rem); */
-    /* justify-items: stretch; */
+    
     justify-content: center;
     margin: auto;
-    /* justify-self: center; */
-    /* align-items: stretch; */
+    
     border: 1px solid black;
 }
 

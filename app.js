@@ -5,7 +5,7 @@ let gV_numberOfColumns = 16;
 
 
 gE_gridContainer.style.cssText = gE_gridContainer.style.cssText +
-    `grid-template-columns: repeat(${gV_numberOfColumns}, 6rem);grid-template-rows: repeat(${gV_numberOfColumns}, 6rem);`;
+    `grid-template-columns: repeat(${gV_numberOfColumns}, ${(16/gV_numberOfColumns)*6}rem);grid-template-rows: repeat(${gV_numberOfColumns},${(16/gV_numberOfColumns)*6}rem);`;
 
 
 
@@ -26,8 +26,10 @@ window.addEventListener('load', gF_makeGrid);
 
 gE_newGridBtn.addEventListener('click', (event) => {
 
-    document.getElementById('draw-area');
+    gE_gridContainer.replaceChildren();
     gV_numberOfColumns = prompt('How many columns do you want');
+    gE_gridContainer.style.cssText = gE_gridContainer.style.cssText +
+    `grid-template-columns: repeat(${gV_numberOfColumns}, ${(16/gV_numberOfColumns)*6}rem);grid-template-rows: repeat(${gV_numberOfColumns},${(16/gV_numberOfColumns)*6}rem);`;
     gF_makeGrid(event);
 
 })

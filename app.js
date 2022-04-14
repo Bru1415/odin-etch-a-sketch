@@ -1,5 +1,8 @@
 const gE_gridContainer = document.querySelector('#container');
 const gE_newGridBtn = document.querySelector('#new-grid');
+const gE_colorPicker = document.querySelector('#color-picker')
+gV_color = '#000000';
+
 
 let gV_numberOfColumns = 16;
 
@@ -21,6 +24,11 @@ const gF_makeGrid = (event) => {
     }
 
 }
+const gF_paint = (event) => {
+    // event.target.classList.add('paint');
+    event.target.style.cssText = `background-color: ${gV_color}`;
+
+}
 
 window.addEventListener('load', gF_makeGrid);
 
@@ -34,10 +42,10 @@ gE_newGridBtn.addEventListener('click', (event) => {
 
 })
 
-const gF_paint = (event) => {
-    event.target.classList.add('paint');
+gE_colorPicker.addEventListener('change', (event) => {
+gV_color = event.target.value;
 
-}
+})
 
 gE_gridContainer.addEventListener('mousedown', (event) => {
 
@@ -52,3 +60,4 @@ gE_gridContainer.addEventListener('mouseup', (event) => {
 
 
 })
+

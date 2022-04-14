@@ -16,10 +16,32 @@
         <menu>
             <button id="new-grid">Clear</button>
             <ul>
+                <div>
+                    <label for="line-thickness">Choose a line-thickness</label>
+                    <select name="line" id="line-thickness">
+                        <option value="">Choose a line-thickness</option>
+                        <option value="small" selected>small(default)</option>
+                        <option value="medium">medium</option>
+                        <option value="strong">strong</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="resolution-select">Choose a resolution</label>
+                    <select name="resolution" id="resolution-select">
+                        <option value="">Choose a resolution</option>
+                        <option value="small" selected>small</option>
+                        <option value="medium">medium</option>
+                        <option value="high">high</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="color-picker">Choose a color</label>
+                    <input type="color" id="color-picker">
+                </div>
                 <li><button>small</button></li>
                 <li><button>medium</button></li>
                 <li><button>large</button></li>
-            </ul>  
+            </ul>
         </menu>
         <div id="container"></div>
     </main>

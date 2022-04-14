@@ -24,6 +24,13 @@ menu ul button {
     font-size: 1.2rem;
 }
 
+menu label{
+    display: block;
+    text-align: center;
+}
+menu div{
+    text-align: center;
+}
 menu ul {
     list-style: none;
     display: flex;
@@ -61,6 +68,6 @@ main {
 
 .paint {
 
-    background-color: black;
+    background-color: #000000;
 
 }
